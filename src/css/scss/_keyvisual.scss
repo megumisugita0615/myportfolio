@@ -1,0 +1,32 @@
+.keyvisual {
+  min-height: 80vh;
+  margin-top: 40vh;
+  margin-bottom: 1rem;
+
+  &__profile-photo {
+    width: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__scroll {
+    animation: move-y 0.5s infinite alternate ease-in-out;
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    font-family: "Sacramento", cursive;
+  }
+}
+
+/*スクロールの矢印*/
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
+}
+@keyframes move-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
