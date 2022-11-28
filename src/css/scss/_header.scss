@@ -1,3 +1,5 @@
+@use "_mixin" as m;
+
 .header {
   height: 5rem;
   width: 100%;
@@ -23,11 +25,19 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
+
+      @include m.mq(xs) {
+        display: none;
+      }
     }
 
     &__item {
       font-size: 1.5rem;
       margin-left: 1rem;
+
+      @include m.mq(sm) {
+        font-size: 1rem;
+      }
     }
   }
 }

@@ -22,9 +22,19 @@
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 575px) {
+  .header__nav__list {
+    display: none;
+  }
+}
 .header__nav__item {
   font-size: 1.5rem;
   margin-left: 1rem;
+}
+@media screen and (min-width: 576px) {
+  .header__nav__item {
+    font-size: 1rem;
+  }
 }
 
 .keyvisual {
@@ -68,11 +78,23 @@
     transform: translateY(10px);
   }
 }
-.about__profile-photo {
+.main__about__profile-photo {
   height: 20rem;
 }
-.about__profile-card {
+.main__about__profile-card {
   padding: 1rem;
+  background-color: #e7eeee;
+  border-radius: 1rem;
+}
+.main__comingsoon-bg {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__comingsoon-content {
+  height: 50vh;
+  padding: 1rem;
+  padding-top: 25vh;
   background-color: #e7eeee;
   border-radius: 1rem;
 }
@@ -126,17 +148,4 @@ section {
 
 .card {
   border: none;
-}
-
-.comingsoon-bg {
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-.comingsoon-content {
-  height: 50vh;
-  padding: 1rem;
-  padding-top: 25vh;
-  background-color: #e7eeee;
-  border-radius: 1rem;
 }
