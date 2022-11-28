@@ -1,6 +1,18 @@
 @charset "UTF-8";
+.cls-1 {
+  fill: #006d77;
+}
+
+.cls-2 {
+  fill: none;
+  opacity: 0.7;
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  stroke-width: 400px;
+}
+
 .signature {
-  color: #006d77 !important;
+  color: #006d77;
   font-family: "Sacramento", cursive;
 }
 
@@ -8,6 +20,117 @@
   border: none;
 }
 
+/*フォント*/
+.bound span {
+  color: #006d77;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 50px;
+  margin: auto;
+  font-size: 1rem;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+/*アニメーション指定
+文字数に合わせてleftや開始時間（2つ目のs）を設定する*/
+.bound span:nth-child(1) {
+  left: -9em;
+  -webkit-animation: bound-anim 0.8s 0.8s infinite;
+          animation: bound-anim 0.8s 0.8s infinite;
+}
+
+.bound span:nth-child(2) {
+  left: -7em;
+  -webkit-animation: bound-anim 0.8s 0.8s infinite;
+          animation: bound-anim 0.8s 0.8s infinite;
+}
+
+.bound span:nth-child(3) {
+  left: -5em;
+  -webkit-animation: bound-anim 0.8s 0.8s infinite;
+          animation: bound-anim 0.8s 0.8s infinite;
+}
+
+.bound span:nth-child(4) {
+  left: -3em;
+  -webkit-animation: bound-anim 0.8s 0.8s infinite;
+          animation: bound-anim 0.8s 0.8s infinite;
+}
+
+.bound span:nth-child(5) {
+  left: -1em;
+  -webkit-animation: bound-anim 0.8s 0.8s infinite;
+          animation: bound-anim 0.8s 0.8s infinite;
+}
+
+.bound span:nth-child(6) {
+  left: 1em;
+  -webkit-animation: bound-anim 0.8s 0.8s infinite;
+          animation: bound-anim 0.8s 0.8s infinite;
+}
+
+.bound span:nth-child(7) {
+  left: 3em;
+  -webkit-animation: bound-anim 0.8s 0.8s infinite;
+          animation: bound-anim 0.8s 0.8s infinite;
+}
+
+.bound span:nth-child(8) {
+  left: 5em;
+  -webkit-animation: bound-anim 0.8s 0.8s infinite;
+          animation: bound-anim 0.8s 0.8s infinite;
+}
+
+.bound span:nth-child(9) {
+  left: 7em;
+  -webkit-animation: bound-anim 0.8s 0.8s infinite;
+          animation: bound-anim 0.8s 0.8s infinite;
+}
+
+.bound span:nth-child(10) {
+  left: 9em;
+  -webkit-animation: bound-anim 0.8s 0.8s infinite;
+          animation: bound-anim 0.8s 0.8s infinite;
+}
+
+/*アニメーションキーフレーム
+小さいフォントサイズの場合はtopの数値も縮小すると飛び過ぎない*/
+@-webkit-keyframes bound-anim {
+  0%, 100% {
+    top: 0;
+    transform: scale(1);
+  }
+  30% {
+    top: -1%;
+  }
+  50% {
+    transform: scale(1);
+  }
+  90% {
+    top: 0;
+    transform: scale(1.2, 0.8);
+  }
+}
+@keyframes bound-anim {
+  0%, 100% {
+    top: 0;
+    transform: scale(1);
+  }
+  30% {
+    top: -1%;
+  }
+  50% {
+    transform: scale(1);
+  }
+  90% {
+    top: 0;
+    transform: scale(1.2, 0.8);
+  }
+}
 .header {
   height: 5rem;
   width: 100%;
@@ -101,47 +224,26 @@
 
 .keyvisual {
   height: 100vh;
-  padding-top: 40vh;
+  padding-top: 30vh;
   margin-bottom: 1rem;
+  color: #006d77;
   background-color: #e7eeee;
   /*スクロールの矢印*/
 }
-.keyvisual__liner {
+.keyvisual__animation__svg {
+  display: block;
+  width: 40%;
+  max-height: 40%;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
 }
-.keyvisual__liner:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1rem;
-  width: 0;
-  border-bottom: solid 2px #ffffff;
-  -webkit-animation: liner_anim 3s linear forwards;
-          animation: liner_anim 3s linear forwards;
-}
-@-webkit-keyframes liner_anim {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@keyframes liner_anim {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
+.keyvisual__animation__image {
+  width: 100%;
 }
 .keyvisual__scroll {
   -webkit-animation: move-y 0.5s infinite alternate ease-in-out;
           animation: move-y 0.5s infinite alternate ease-in-out;
-  font-family: "Sacramento", cursive;
-  margin-top: 25vh;
+  margin-top: 20vh;
   margin-left: auto;
   margin-right: auto;
 }

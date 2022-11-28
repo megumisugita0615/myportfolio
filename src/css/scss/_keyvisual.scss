@@ -2,39 +2,26 @@
 
 .keyvisual {
   height: 100vh;
-  padding-top: 40vh;
+  padding-top: 30vh;
   margin-bottom: 1rem;
+  color: #006d77;
   background-color: #e7eeee;
 
-  &__liner {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-
-    &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -1rem;
-      width: 0;
-      border-bottom: solid 2px #ffffff;
-      animation: liner_anim 3s linear forwards;
+  &__animation {
+    &__svg {
+      display: block;
+      width: 40%;
+      max-height: 40%;
+      margin-left: auto;
+      margin-right: auto;
     }
-
-    @keyframes liner_anim {
-      0% {
-        width: 0%;
-      }
-      100% {
-        width: 100%;
-      }
+    &__image {
+      width: 100%;
     }
   }
-
   &__scroll {
     animation: move-y 0.5s infinite alternate ease-in-out;
-    font-family: "Sacramento", cursive;
-    margin-top: 25vh;
+    margin-top: 20vh;
     margin-left: auto;
     margin-right: auto;
   }

@@ -59,15 +59,37 @@
         </div>
       </div>
     </header>
+    <!--
+      キービジュアル
+    -->
     <section class="keyvisual">
       <div class="container">
         <div class="text-center">
-          <div class="keyvisual__liner">
-            <h1>
-              This is <span class="signature"> Megumi Sugita </span>'s Portfolio
-              Site.
-            </h1>
+          <div class="svgall keyvisual__animation">
+            <svg
+              class="mask keyvisual__animation__svg"
+              viewBox="0 0 1235.65 402"
+              id="move"
+            >
+              <defs>
+                <!-- アニメーション画像 -->
+                <mask id="clipMask">
+                  <!--マスクのpath-->
+                  <path
+                    class="cls-2"
+                    d="M.32,202c411.67-.67,823.33-1.33,1235-2"
+                  />
+                </mask>
+              </defs>
+              <!-- ベース画像 -->
+              <image
+                xlink:href="src/img/name_base.svg"
+                mask="url(#clipMask)"
+                class="keyvisual__animation__image"
+              ></image>
+            </svg>
           </div>
+          <p>Welcome to my portfolio Site.</p>
           <a href="#about">
             <div class="keyvisual__scroll">
               <h4>Scroll</h4>
@@ -111,7 +133,18 @@
             <p>これまでの成果物をご紹介します。</p>
             <div class="row main__comingsoon-bg text-center">
               <div class="col card main__comingsoon-content">
-                Coming Soon ......
+                <p class="bound">
+                  <span>C</span>
+                  <span>o</span>
+                  <span>m</span>
+                  <span>i</span>
+                  <span>n</span>
+                  <span>g </span>
+                  <span> S</span>
+                  <span>o</span>
+                  <span>o</span>
+                  <span>n</span>
+                </p>
               </div>
             </div>
           </div>
@@ -121,7 +154,18 @@
           <p></p>
           <div class="row main__comingsoon-bg text-center">
             <div class="col card main__comingsoon-content">
-              Coming Soon ......
+              <p class="bound">
+                <span>C</span>
+                <span>o</span>
+                <span>m</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g </span>
+                <span> S</span>
+                <span>o</span>
+                <span>o</span>
+                <span>n</span>
+              </p>
             </div>
           </div>
         </section>
@@ -130,7 +174,18 @@
           <p></p>
           <div class="row main__comingsoon-bg text-center">
             <div class="col card main__comingsoon-content">
-              Coming Soon ......
+              <p class="bound">
+                <span>C</span>
+                <span>o</span>
+                <span>m</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g </span>
+                <span> S</span>
+                <span>o</span>
+                <span>o</span>
+                <span>n</span>
+              </p>
             </div>
           </div>
         </section>
@@ -144,5 +199,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="src/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+    <script>
+      new Vivus("move", {
+        type: "scenario-sync",
+        duration: 100,
+        forceRender: false,
+        animTimingFunction: Vivus.EASE,
+      });
+    </script>
   </body>
 </html>
