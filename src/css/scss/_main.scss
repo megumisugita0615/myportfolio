@@ -1,0 +1,29 @@
+@use "_mixin" as m;
+
+.main {
+  &__about {
+    &__profile-photo {
+      height: 20rem;
+    }
+
+    &__profile-card {
+      padding: 1rem;
+      background-color: #e7eeee;
+      border-radius: 1rem;
+    }
+  }
+  &__comingsoon {
+    &-bg {
+      margin-top: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &-content {
+      height: 50vh;
+      padding: 1rem;
+      padding-top: 25vh;
+      background-color: #e7eeee;
+      border-radius: 1rem;
+    }
+  }
+}

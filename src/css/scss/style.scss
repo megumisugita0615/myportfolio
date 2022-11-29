@@ -1,0 +1,48 @@
+@use "_custom";
+@use "_mixin" as m;
+@use "_header";
+@use "_keyvisual";
+@use "_main";
+@use "_works";
+
+html,
+body {
+  color: #07373b;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  scroll-padding-top: 5rem;
+}
+
+a {
+  color: #006d77;
+
+  &:hover {
+    color: #87bcc1;
+  }
+}
+
+li {
+  list-style: none;
+  font-weight: 200;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #87bcc1;
+}
+
+section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}

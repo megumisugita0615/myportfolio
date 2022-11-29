@@ -1,0 +1,95 @@
+@use "_mixin" as m;
+
+.header {
+  height: 5rem;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  border-color: rgba(231, 231, 231, 0);
+  box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+  z-index: 10;
+
+  &__container {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__nav {
+    display: block;
+    padding-right: 0;
+
+    &__list {
+      display: flex;
+      flex-wrap: nowrap;
+      transition: all 0.4s;
+      font-size: 1.5rem;
+
+      @include m.mq(sm) {
+        font-size: 1.2rem;
+        height: 0;
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 5rem;
+        overflow: hidden;
+      }
+      @include m.mq(xs) {
+        font-size: 1.2rem;
+        height: 0;
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 5rem;
+        overflow: hidden;
+      }
+
+      &--active {
+        font-size: 1.2rem;
+        height: 8rem;
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 5rem;
+        background-color: #ffffff;
+        padding-bottom: 1rem;
+      }
+    }
+
+    &__item {
+      padding-left: 1rem;
+    }
+
+    &__toggle {
+      &-button {
+        align-items: baseline;
+        color: #006d77;
+        display: none;
+        padding: 0;
+
+        @include m.mq(sm) {
+          display: block;
+        }
+        @include m.mq(xs) {
+          display: block;
+        }
+      }
+      &-icon {
+        font-size: 2.4rem !important;
+
+        &:hover {
+          color: #87bcc1;
+        }
+      }
+    }
+  }
+}
