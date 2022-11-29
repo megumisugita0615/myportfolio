@@ -18,6 +18,9 @@
 
 .card {
   border: none;
+  padding: 1rem;
+  background-color: #e7eeee;
+  border-radius: 1rem;
 }
 
 /*フォント*/
@@ -270,11 +273,6 @@
 .main__about__profile-photo {
   height: 20rem;
 }
-.main__about__profile-card {
-  padding: 1rem;
-  background-color: #e7eeee;
-  border-radius: 1rem;
-}
 .main__comingsoon-bg {
   margin-top: 1rem;
   margin-left: auto;
@@ -286,6 +284,15 @@
   padding-top: 25vh;
   background-color: #e7eeee;
   border-radius: 1rem;
+}
+.main__skill__block__heading {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__skill__block__icons {
+  font-size: 6rem;
+  color: #006d77;
 }
 
 html,
@@ -322,6 +329,10 @@ h6 {
 
 h1 {
   color: #87bcc1;
+}
+
+h2 {
+  color: #006d77;
 }
 
 section {

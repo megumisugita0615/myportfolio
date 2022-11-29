@@ -29,6 +29,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <!-- devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -103,7 +108,9 @@
     </section>
     <main class="main">
       <div class="container">
-        <!-- about -->
+        <!-- 
+          about 
+        -->
         <section class="main__about">
           <div class="container">
             <div class="section-title">
@@ -118,16 +125,19 @@
               <h2 class="signature">MegumiSugita</h2>
             </div>
             <div class="row">
-              <div class="main__about__profile-card col-md-6 offset-md-3">
+              <div class="card col-md-8 offset-md-2">
                 <div class="main__about__profile-card__mycard"></div>
-                1999年生まれ。東京都在住のWebエンジニア。<br />
-                公立大学の文学部を卒業。学生時代はHTMLとCSSのみの静的サイト制作を独学。<br />
-                2022年、デジタルマーケティング支援企業にWebエンジニア職で入社。実際にWebアプリケーションの開発をおこないながら、フロントエンド・バックエンド・データベースを学ぶ。<br>
-                プライベートでもWebアプリ開発やインフラ領域の学習をおこなう。最近は、Adobeツールを用いたグラフィック作成やWebデザインなども勉強中。
+                東京在住のWebエンジニア。<br />
+                公立大学の文学部を卒業後、未経験のWebエンジニアとして新卒入社。
+                入社後、実際に開発しながらWeb技術を広く学習。<br />
+                プライベートでもWebアプリ開発やインフラ領域の学習を実施。グラフィック作成・Webデザインなども勉強中。
               </div>
             </div>
           </div>
         </section>
+        <!--
+          works
+        -->
         <section class="main__works">
           <div class="container">
             <h1><a name="works">works</a></h1>
@@ -150,23 +160,29 @@
             </div>
           </div>
         </section>
-        <section class="skill">
-          <h1><a name="skill">skill</a></h1>
-          <p></p>
-          <div class="row main__comingsoon-bg text-center">
-            <div class="col card main__comingsoon-content">
-              <p class="bound">
-                <span>C</span>
-                <span>o</span>
-                <span>m</span>
-                <span>i</span>
-                <span>n</span>
-                <span>g </span>
-                <span> S</span>
-                <span>o</span>
-                <span>o</span>
-                <span>n</span>
-              </p>
+        <!--
+          skill
+        -->
+        <section class="main__skill">
+          <h1><a name="main__skill">skill</a></h1>
+          <p>使用経験がある技術をまとめました。</p>
+          <div class="main__skill_frontend">
+            <div class="main__skill__section">
+              <h2 class="text-center">Front-end</h2>
+              <div class="main__skill__block">
+                <div class="main__skill__block__heading d-flex text-center">
+                  <i
+                    class="main__skill__block__icons devicon-html5-plain-wordmark"
+                  ></i>
+                  <h4>+</h4>
+                  <i
+                    class="main__skill__block__icons devicon-css3-plain-wordmark"
+                  ></i>
+                </div>
+                <div class="card">
+                  <p></p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
