@@ -21,10 +21,6 @@
     align-items: baseline;
   }
 
-  &__logo {
-    font-size: 2.5rem;
-  }
-
   &__nav {
     display: block;
     padding-right: 0;
@@ -33,8 +29,10 @@
       display: flex;
       flex-wrap: nowrap;
       transition: all 0.4s;
+      font-size: 1.5rem;
 
       @include m.mq(sm) {
+        font-size: 1.2rem;
         height: 0;
         width: 100%;
         display: block;
@@ -44,6 +42,7 @@
         overflow: hidden;
       }
       @include m.mq(xs) {
+        font-size: 1.2rem;
         height: 0;
         width: 100%;
         display: block;
@@ -54,7 +53,8 @@
       }
 
       &--active {
-        height: 10rem;
+        font-size: 1.2rem;
+        height: 8rem;
         width: 100%;
         display: block;
         position: absolute;
@@ -66,8 +66,7 @@
     }
 
     &__item {
-      font-size: 1.5rem;
-      margin-left: 1rem;
+      padding-left: 1rem;
     }
 
     &__toggle {

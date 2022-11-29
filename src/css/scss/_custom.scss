@@ -33,7 +33,7 @@
   top: 0;
   bottom: 50px;
   margin: auto;
-  font-size: 1rem;
+  font-size: 1.6rem;
   text-align: center;
   width: 100px;
   height: 100px;
@@ -42,46 +42,46 @@
 /*アニメーション指定
 文字数に合わせてleftや開始時間（2つ目のs）を設定する*/
 .bound span:nth-child(1) {
-  left: -9em;
+  left: -5.4em;
   animation: bound-anim 0.8s 0.8s infinite;
 }
 .bound span:nth-child(2) {
-  left: -7em;
+  left: -4.2em;
   animation: bound-anim 0.8s 0.8s infinite;
 }
 .bound span:nth-child(3) {
-  left: -5em;
+  left: -2.8em;
   animation: bound-anim 0.8s 0.8s infinite;
 }
 .bound span:nth-child(4) {
-  left: -3em;
+  left: -1.6em;
   animation: bound-anim 0.8s 0.8s infinite;
 }
 
 .bound span:nth-child(5) {
-  left: -1em;
+  left: -0.6em;
   animation: bound-anim 0.8s 0.8s infinite;
 }
 
 .bound span:nth-child(6) {
-  left: 1em;
+  left: 0.6em;
   animation: bound-anim 0.8s 0.8s infinite;
 }
 
 .bound span:nth-child(7) {
-  left: 3em;
+  left: 1.8em;
   animation: bound-anim 0.8s 0.8s infinite;
 }
 .bound span:nth-child(8) {
-  left: 5em;
+  left: 3em;
   animation: bound-anim 0.8s 0.8s infinite;
 }
 .bound span:nth-child(9) {
-  left: 7em;
+  left: 4.2em;
   animation: bound-anim 0.8s 0.8s infinite;
 }
 .bound span:nth-child(10) {
-  left: 9em;
+  left: 5.4em;
   animation: bound-anim 0.8s 0.8s infinite;
 }
 
@@ -101,6 +101,6 @@
   }
   90% {
     top: 0;
-    transform: scale(1.2, 0.8);
+    transform: scale(1.1, 0.9);
   }
 }
