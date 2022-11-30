@@ -43,67 +43,68 @@
 .bound span:nth-child(1) {
   left: -5.4em;
   -webkit-animation: bound-anim 0.8s 0.8s infinite;
-          animation: bound-anim 0.8s 0.8s infinite;
+  animation: bound-anim 0.8s 0.8s infinite;
 }
 
 .bound span:nth-child(2) {
   left: -4.2em;
   -webkit-animation: bound-anim 0.8s 0.8s infinite;
-          animation: bound-anim 0.8s 0.8s infinite;
+  animation: bound-anim 0.8s 0.8s infinite;
 }
 
 .bound span:nth-child(3) {
   left: -2.8em;
   -webkit-animation: bound-anim 0.8s 0.8s infinite;
-          animation: bound-anim 0.8s 0.8s infinite;
+  animation: bound-anim 0.8s 0.8s infinite;
 }
 
 .bound span:nth-child(4) {
   left: -1.6em;
   -webkit-animation: bound-anim 0.8s 0.8s infinite;
-          animation: bound-anim 0.8s 0.8s infinite;
+  animation: bound-anim 0.8s 0.8s infinite;
 }
 
 .bound span:nth-child(5) {
   left: -0.6em;
   -webkit-animation: bound-anim 0.8s 0.8s infinite;
-          animation: bound-anim 0.8s 0.8s infinite;
+  animation: bound-anim 0.8s 0.8s infinite;
 }
 
 .bound span:nth-child(6) {
   left: 0.6em;
   -webkit-animation: bound-anim 0.8s 0.8s infinite;
-          animation: bound-anim 0.8s 0.8s infinite;
+  animation: bound-anim 0.8s 0.8s infinite;
 }
 
 .bound span:nth-child(7) {
   left: 1.8em;
   -webkit-animation: bound-anim 0.8s 0.8s infinite;
-          animation: bound-anim 0.8s 0.8s infinite;
+  animation: bound-anim 0.8s 0.8s infinite;
 }
 
 .bound span:nth-child(8) {
   left: 3em;
   -webkit-animation: bound-anim 0.8s 0.8s infinite;
-          animation: bound-anim 0.8s 0.8s infinite;
+  animation: bound-anim 0.8s 0.8s infinite;
 }
 
 .bound span:nth-child(9) {
   left: 4.2em;
   -webkit-animation: bound-anim 0.8s 0.8s infinite;
-          animation: bound-anim 0.8s 0.8s infinite;
+  animation: bound-anim 0.8s 0.8s infinite;
 }
 
 .bound span:nth-child(10) {
   left: 5.4em;
   -webkit-animation: bound-anim 0.8s 0.8s infinite;
-          animation: bound-anim 0.8s 0.8s infinite;
+  animation: bound-anim 0.8s 0.8s infinite;
 }
 
 /*アニメーションキーフレーム
 小さいフォントサイズの場合はtopの数値も縮小すると飛び過ぎない*/
 @-webkit-keyframes bound-anim {
-  0%, 100% {
+  0%,
+  100% {
     top: 0;
     transform: scale(1);
   }
@@ -119,7 +120,8 @@
   }
 }
 @keyframes bound-anim {
-  0%, 100% {
+  0%,
+  100% {
     top: 0;
     transform: scale(1);
   }
@@ -134,6 +136,11 @@
     transform: scale(1.1, 0.9);
   }
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .header {
   height: 5rem;
   width: 100%;
@@ -243,13 +250,6 @@
 .keyvisual__animation__image {
   width: 100%;
 }
-.keyvisual__scroll {
-  -webkit-animation: move-y 0.5s infinite alternate ease-in-out;
-          animation: move-y 0.5s infinite alternate ease-in-out;
-  margin-top: 20vh;
-  margin-left: auto;
-  margin-right: auto;
-}
 .keyvisual .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
 }
@@ -270,8 +270,29 @@
   }
 }
 
+#keyvisual__scroll {
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__scroll {
+  -webkit-animation: move-y 0.5s infinite alternate ease-in-out;
+  animation: move-y 0.5s infinite alternate ease-in-out;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__section-title {
+  font-size: 4.8rem;
+  text-align: center;
+  color: #87bcc1;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 .main__about__profile-photo {
   height: 20rem;
+  margin-bottom: 1rem;
 }
 .main__comingsoon-bg {
   margin-top: 1rem;
@@ -286,24 +307,34 @@
   border-radius: 1rem;
 }
 .main__skill__section {
-  margin-top: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+.main__skill__lang {
+  margin-top: 1rem;
 }
 .main__skill__block {
   margin: 2rem;
   align-items: center;
 }
-.main__skill__block__heading {
-  align-items: center;
-  justify-content: center;
+.main__skill__block__name {
+  margin-left: 1rem;
 }
-.main__skill__block__icons {
-  font-size: 4rem;
+.main__skill__block__devicon {
+  font-size: 5rem;
   color: #006d77;
   margin: 1rem;
 }
 .main__skill__block__explain {
   margin: 0;
   padding: 0.5rem;
+}
+
+.footer {
+  height: 5rem;
+  width: 100%;
+  background-color: #006d77;
+  padding: 1rem;
 }
 
 html,
@@ -336,13 +367,10 @@ h1 {
   color: #87bcc1;
 }
 
-h2 {
-  color: #006d77;
-}
-
+h2,
 h3,
 h4 {
-  color: #07373b;
+  color: #006d77;
 }
 
 section {

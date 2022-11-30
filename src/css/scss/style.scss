@@ -3,7 +3,7 @@
 @use "_header";
 @use "_keyvisual";
 @use "_main";
-@use "_works";
+@use "_footer";
 
 html,
 body {
@@ -35,13 +35,10 @@ h1 {
   color: #87bcc1;
 }
 
-h2 {
-  color: #006d77;
-}
-
+h2,
 h3,
 h4 {
-  color: #07373b;
+  color: #006d77;
 }
 
 section {
