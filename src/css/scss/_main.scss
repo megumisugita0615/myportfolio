@@ -2,10 +2,16 @@
 
 .main {
   &__scroll {
-    animation: move-y 0.5s infinite alternate ease-in-out;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    &__section {
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+    }
+    &__block {
+      animation: move-y 0.5s infinite alternate ease-in-out;
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__section-title {
@@ -28,16 +34,16 @@
       margin-right: auto;
     }
     &-content {
-      height: 50vh;
+      height: 20rem;
       padding: 1rem;
-      padding-top: 25vh;
+      padding-top: 10rem;
       background-color: #e7eeee;
       border-radius: 1rem;
     }
   }
 
   &__skill {
-    &__section {
+    &__area {
       padding-top: 2rem;
       margin-bottom: 2rem;
     }

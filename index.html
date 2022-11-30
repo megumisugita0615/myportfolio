@@ -95,14 +95,16 @@
             </svg>
           </div>
           <p>Welcome to my portfolio Site.</p>
-          <a href="#about">
-            <div class="main__scroll" id="keyvisual__scroll">
-              <h4>Scroll</h4>
-              <span class="material-symbols-outlined">
-                keyboard_double_arrow_down
-              </span>
-            </div>
-          </a>
+          <div class="text-center main__scroll__section" id="keyvisual__scroll">
+            <a href="#about">
+              <div class="main__scroll__block">
+                <h4>Scroll</h4>
+                <span class="material-symbols-outlined">
+                  keyboard_double_arrow_down
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -130,22 +132,22 @@
                   東京在住のWebエンジニア。
                   公立大学の文学部を卒業後、未経験のWebエンジニアとして新卒入社。
                   入社後、実際に開発しながらWeb技術を広く学習。
-                  <h2>いつも前向き。楽しみながら取り組んでいます。</h2>
+                  <h3>いつも前向き。楽しみながら取り組んでいます。</h3>
                   プライベートでもWebアプリ開発やインフラ領域の学習を実施。グラフィック作成・Webデザインなども勉強中。
-                  <h2>自分の手でコツコツつくることが大好きです。</h2>
+                  <h3>自分の手でコツコツつくることが大好きです。</h3>
                 </div>
               </div>
             </div>
-            <div class="text-center">
-              <a href="#skill">
-                <div class="main__scroll">
-                  <h4>Scroll</h4>
-                  <span class="material-symbols-outlined">
-                    keyboard_double_arrow_down
-                  </span>
-                </div>
-              </a>
-            </div>
+          </div>
+          <div class="text-center main__scroll__section">
+            <a href="#skill">
+              <div class="main__scroll__block">
+                <h4>Scroll</h4>
+                <span class="material-symbols-outlined">
+                  keyboard_double_arrow_down
+                </span>
+              </div>
+            </a>
           </div>
         </section>
         <!--
@@ -156,108 +158,360 @@
             <div class="main__section-title">
               <a name="skill">skill</a>
             </div>
-            <!-- フロントエンド -->
-            <div>
-              <div class="main__skill__section">
-                <h1>フロントエンド</h1>
+            <div class="main__skill__section">
+              <!-- フロントエンド -->
+              <div>
+                <div class="main__skill__area">
+                  <h1>フロントエンド</h1>
+                  <div class="main__skill__langs row">
+                    <!--HTML-->
+                    <div
+                      class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
+                    >
+                      <div class="main__skill__block__icons">
+                        <i
+                          class="main__skill__block__devicon devicon-html5-plain-wordmark"
+                        ></i>
+                      </div>
+                      <div>
+                        <h4 class="main__skill__block__name">HTML</h4>
+                        <div class="main__skill__block__explain">
+                          <div class="card">
+                            <p>
+                              命名規則を用いたコーディングが可能。スタイルシートやスクリプトなどの読み込みもスムーズに実施。アプリ開発のたびに触れていて、最も慣れている言語。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--CSS-->
+                    <div
+                      class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
+                    >
+                      <div class="main__skill__block__icons">
+                        <i
+                          class="main__skill__block__devicon devicon-css3-plain-wordmark"
+                        ></i>
+                      </div>
+                      <div>
+                        <h4 class="main__skill__block__name">CSS</h4>
+                        <div class="main__skill__block__explain">
+                          <div class="card">
+                            <p>
+                              BEM記法、SCSSコンパイルでの実装を経験。BootStrapのグリッドシステムを用いてレスポンシブを実装可能。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--JavaScript-->
+                    <div
+                      class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
+                    >
+                      <div class="main__skill__block__icons">
+                        <i
+                          class="main__skill__block__devicon devicon-javascript-plain"
+                        ></i>
+                      </div>
+                      <div>
+                        <h4 class="main__skill__block__name">JavaScript</h4>
+                        <div class="main__skill__block__explain">
+                          <div class="card">
+                            <p>
+                              ハンバーガーメニューやライブラリ（particles.js）などの実装を経験。
+                              JavaScript Standard Styleを用いたフォーマット。
+                              アルゴリズムの組み立ても可能。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- TypeScript -->
+                    <div
+                      class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
+                    >
+                      <div class="main__skill__block__icons">
+                        <i
+                          class="main__skill__block__devicon devicon-typescript-plain"
+                        ></i>
+                      </div>
+                      <div>
+                        <h4 class="main__skill__block__name">TypeScript</h4>
+                        <div class="main__skill__block__explain">
+                          <div class="card">
+                            <p>
+                              TypeScriptの型づけを学習し、JSアルゴリズムの書き換えを経験。TypeScriptを実行するための環境構築も可能。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- React -->
+                    <div
+                      class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
+                    >
+                      <div class="main__skill__block__icons">
+                        <i
+                          class="main__skill__block__devicon devicon-react-original"
+                        ></i>
+                      </div>
+                      <div>
+                        <h4 class="main__skill__block__name">React</h4>
+                        <div class="main__skill__block__explain">
+                          <div class="card">
+                            <p>
+                              npm・yarnでの環境構築、プロジェクトの作成方法、各ディレクトリの役割を学ぶ。技術書の理解と実際の開発を実施。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- バックエンド -->
+              <div>
+                <div class="main__skill__area">
+                  <h1>バックエンド</h1>
+                  <div class="row">
+                    <!--PHP-->
+                    <div
+                      class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
+                    >
+                      <div class="main__skill__block__icons">
+                        <i
+                          class="main__skill__block__devicon devicon-php-plain"
+                        ></i>
+                      </div>
+                      <div>
+                        <h4 class="main__skill__block__name">PHP</h4>
+                        <div class="main__skill__block__explain">
+                          <div class="card">
+                            <p>
+                              アルゴリズムの組み立て、オブジェクト指向プログラミングが可能。phpcs,
+                              phpcbfを用いてコードをフォーマットを実施。開発環境の構築も経験。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Laravel-->
+                    <div
+                      class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
+                    >
+                      <div class="main__skill__block__icons">
+                        <i
+                          class="main__skill__block__devicon devicon-laravel-plain"
+                        ></i>
+                      </div>
+                      <div>
+                        <h4 class="main__skill__block__name">Laravel</h4>
+                        <div class="main__skill__block__explain">
+                          <div class="card">
+                            <p>
+                              Laravelフレームワークを用いたWebアプリ開発を経験。CRUD機能、画像アップロード機能、ログイン機能、API機能を実装。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Node.js-->
+                    <div
+                      class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
+                    >
+                      <div class="main__skill__block__icons">
+                        <i
+                          class="main__skill__block__devicon devicon-nodejs-plain"
+                        ></i>
+                      </div>
+                      <div>
+                        <h4 class="main__skill__block__name">Node.js</h4>
+                        <div class="main__skill__block__explain">
+                          <div class="card">
+                            <p>
+                              Node.jsを用いてJavaScriptをサーバーサイドで実行可能。npm/yarnでのパッケージインストール・環境構築も経験。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- express -->
+                    <div
+                      class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
+                    >
+                      <div class="main__skill__block__icons">
+                        <i
+                          class="main__skill__block__devicon devicon-express-original"
+                        ></i>
+                      </div>
+                      <div>
+                        <h4 class="main__skill__block__name">Express</h4>
+                        <div class="main__skill__block__explain">
+                          <div class="card">
+                            <p>
+                              現在、環境構築や記述法などを学習中。環境構築、CRUD機能の実装を予定。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- DB -->
+              <div class="main__skill__area">
+                <h1>データベース</h1>
                 <div class="main__skill__langs row">
-                  <!--HTML-->
+                  <!--MySQL-->
                   <div
                     class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
                   >
                     <div class="main__skill__block__icons">
                       <i
-                        class="main__skill__block__devicon devicon-html5-plain-wordmark"
+                        class="main__skill__block__devicon devicon-mysql-plain"
                       ></i>
                     </div>
                     <div>
-                      <h4 class="main__skill__block__name">HTML</h4>
+                      <h4 class="main__skill__block__name">MySQL</h4>
                       <div class="main__skill__block__explain">
                         <div class="card">
                           <p>
-                            命名規則を用いたコーディングが可能。スタイルシートやスクリプトなどの読み込みもスムーズに実施。アプリ開発のたびに触れていて、最も慣れている言語。
+                            SQL文でDBを操作可能。PHPやNode.jsと接続したCRUD機能実装を経験。
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!--CSS-->
+                </div>
+              </div>
+              <!-- 開発 -->
+              <div class="main__skill__area">
+                <h1>開発</h1>
+                <div class="main__skill__langs row">
+                  <!-- Docker -->
                   <div
                     class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
                   >
                     <div class="main__skill__block__icons">
                       <i
-                        class="main__skill__block__devicon devicon-css3-plain-wordmark"
+                        class="main__skill__block__devicon devicon-docker-plain"
                       ></i>
                     </div>
                     <div>
-                      <h4 class="main__skill__block__name">CSS</h4>
+                      <h4 class="main__skill__block__name">Docker</h4>
                       <div class="main__skill__block__explain">
                         <div class="card">
                           <p>
-                            BEM記法、SCSSコンパイルでの実装を経験。BootStrapのグリッドシステムを用いてレスポンシブを実装可能。
+                            Dockerの仕組みを学習。LaravelやNode.jsなど、バックエンド環境をDocker
+                            Composeで構築。
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!--JavaScript-->
+                  <!-- GitHub -->
                   <div
                     class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
                   >
                     <div class="main__skill__block__icons">
                       <i
-                        class="main__skill__block__devicon devicon-javascript-plain"
+                        class="main__skill__block__devicon devicon-github-original"
                       ></i>
                     </div>
                     <div>
-                      <h4 class="main__skill__block__name">JavaScript</h4>
+                      <h4 class="main__skill__block__name">GitHub</h4>
                       <div class="main__skill__block__explain">
                         <div class="card">
                           <p>
-                            ハンバーガーメニューやライブラリ（particles.js）などの実装を経験。
-                            JavaScript Standard Styleを用いたフォーマット。
-                            アルゴリズムの組み立ても可能。
+                            gitとGitHubの仕組みを学習、実践。PullRequest機能を用いた相互レビューも可能。
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- TypeScript -->
+                  <!-- VScode -->
                   <div
                     class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
                   >
                     <div class="main__skill__block__icons">
                       <i
-                        class="main__skill__block__devicon devicon-typescript-plain"
+                        class="main__skill__block__devicon devicon-vscode-plain"
                       ></i>
                     </div>
                     <div>
-                      <h4 class="main__skill__block__name">TypeScript</h4>
+                      <h4 class="main__skill__block__name">
+                        Visual Studio Code
+                      </h4>
                       <div class="main__skill__block__explain">
                         <div class="card">
                           <p>
-                            TypeScriptの型づけを学習し、JSアルゴリズムの書き換えを経験。TypeScriptを実行するための環境構築も可能。
+                            使用エディタ。拡張機能やフォーマットなどのsettings.jsonを用いた設定も経験。
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- React -->
+                </div>
+              </div>
+              <!--　デザイン -->
+              <div class="main__skill__area">
+                <h1>デザインツール</h1>
+                <div class="main__skill__langs row">
+                  <!-- XD -->
                   <div
                     class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
                   >
                     <div class="main__skill__block__icons">
                       <i
-                        class="main__skill__block__devicon devicon-react-original"
+                        class="main__skill__block__devicon devicon-xd-plain"
                       ></i>
                     </div>
                     <div>
-                      <h4 class="main__skill__block__name">React</h4>
+                      <h4 class="main__skill__block__name">Adobe XD</h4>
                       <div class="main__skill__block__explain">
                         <div class="card">
                           <p>
-                            npm・yarnでの環境構築、プロジェクトの作成方法、各ディレクトリの役割を学ぶ。技術書の理解と実際の開発を実施。
+                            現在学習中。主にワイヤーフレームの作成、Webページのデザインに使用。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Illustrator -->
+                  <div
+                    class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
+                  >
+                    <div class="main__skill__block__icons">
+                      <i
+                        class="main__skill__block__devicon devicon-illustrator-plain"
+                      ></i>
+                    </div>
+                    <div>
+                      <h4 class="main__skill__block__name">Illustrator</h4>
+                      <div class="main__skill__block__explain">
+                        <div class="card">
+                          <p>
+                            現在学習中。本サイトのキービジュアル（アニメーション）作成に使用。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Photoshop -->
+                  <div
+                    class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
+                  >
+                    <div class="main__skill__block__icons">
+                      <i
+                        class="main__skill__block__devicon devicon-photoshop-plain"
+                      ></i>
+                    </div>
+                    <div>
+                      <h4 class="main__skill__block__name">Photoshop</h4>
+                      <div class="main__skill__block__explain">
+                        <div class="card">
+                          <p>
+                            現在学習中。主に画像加工に使用。ゆくゆくはグラフィック作成も想定。
                           </p>
                         </div>
                       </div>
@@ -266,262 +520,16 @@
                 </div>
               </div>
             </div>
-            <!-- バックエンド -->
-            <div>
-              <div class="main__skill__section">
-                <h1>バックエンド</h1>
-                <div class="main__skill__area row">
-                  <!--PHP-->
-                  <div
-                    class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
-                  >
-                    <div class="main__skill__block__icons">
-                      <i
-                        class="main__skill__block__devicon devicon-php-plain"
-                      ></i>
-                    </div>
-                    <div>
-                      <h4 class="main__skill__block__name">PHP</h4>
-                      <div class="main__skill__block__explain">
-                        <div class="card">
-                          <p>
-                            アルゴリズムの組み立て、オブジェクト指向プログラミングが可能。phpcs,
-                            phpcbfを用いてコードをフォーマットを実施。開発環境の構築も経験。
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--Laravel-->
-                  <div
-                    class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
-                  >
-                    <div class="main__skill__block__icons">
-                      <i
-                        class="main__skill__block__devicon devicon-laravel-plain"
-                      ></i>
-                    </div>
-                    <div>
-                      <h4 class="main__skill__block__name">Laravel</h4>
-                      <div class="main__skill__block__explain">
-                        <div class="card">
-                          <p>
-                            Laravelフレームワークを用いたWebアプリ開発を経験。CRUD機能、画像アップロード機能、ログイン機能、API機能を実装。
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--Node.js-->
-                  <div
-                    class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
-                  >
-                    <div class="main__skill__block__icons">
-                      <i
-                        class="main__skill__block__devicon devicon-nodejs-plain"
-                      ></i>
-                    </div>
-                    <div>
-                      <h4 class="main__skill__block__name">Node.js</h4>
-                      <div class="main__skill__block__explain">
-                        <div class="card">
-                          <p>
-                            Node.jsを用いてJavaScriptをサーバーサイドで実行可能。npm/yarnでのパッケージインストール・環境構築も経験。
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- express -->
-                  <div
-                    class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
-                  >
-                    <div class="main__skill__block__icons">
-                      <i
-                        class="main__skill__block__devicon devicon-express-original"
-                      ></i>
-                    </div>
-                    <div>
-                      <h4 class="main__skill__block__name">Express</h4>
-                      <div class="main__skill__block__explain">
-                        <div class="card">
-                          <p>
-                            現在、環境構築や記述法などを学習中。環境構築、CRUD機能の実装を予定。
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          </div>
+          <div class="text-center main__scroll__section">
+            <a href="#works">
+              <div class="main__scroll__block">
+                <h4>Scroll</h4>
+                <span class="material-symbols-outlined">
+                  keyboard_double_arrow_down
+                </span>
               </div>
-            </div>
-            <!-- DB -->
-            <div class="main__skill__section">
-              <h1>データベース</h1>
-              <div class="main__skill__langs row">
-                <!--MySQL-->
-                <div
-                  class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
-                >
-                  <div class="main__skill__block__icons">
-                    <i
-                      class="main__skill__block__devicon devicon-mysql-plain"
-                    ></i>
-                  </div>
-                  <div>
-                    <h4 class="main__skill__block__name">MySQL</h4>
-                    <div class="main__skill__block__explain">
-                      <div class="card">
-                        <p>
-                          SQL文でDBを操作可能。PHPやNode.jsと接続したCRUD機能実装を経験。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 開発 -->
-            <div class="main__skill__section">
-              <h1>開発</h1>
-              <div class="main__skill__langs row">
-                <!-- Docker -->
-                <div
-                  class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
-                >
-                  <div class="main__skill__block__icons">
-                    <i
-                      class="main__skill__block__devicon devicon-docker-plain"
-                    ></i>
-                  </div>
-                  <div>
-                    <h4 class="main__skill__block__name">Docker</h4>
-                    <div class="main__skill__block__explain">
-                      <div class="card">
-                        <p>
-                          Dockerの仕組みを学習。LaravelやNode.jsなど、バックエンド環境をDocker
-                          Composeで構築。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- GitHub -->
-                <div
-                  class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
-                >
-                  <div class="main__skill__block__icons">
-                    <i
-                      class="main__skill__block__devicon devicon-github-original"
-                    ></i>
-                  </div>
-                  <div>
-                    <h4 class="main__skill__block__name">GitHub</h4>
-                    <div class="main__skill__block__explain">
-                      <div class="card">
-                        <p>
-                          gitとGitHubの仕組みを学習、実践。PullRequest機能を用いた相互レビューも可能。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- VScode -->
-                <div
-                  class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
-                >
-                  <div class="main__skill__block__icons">
-                    <i
-                      class="main__skill__block__devicon devicon-vscode-plain"
-                    ></i>
-                  </div>
-                  <div>
-                    <h4 class="main__skill__block__name">Visual Studio Code</h4>
-                    <div class="main__skill__block__explain">
-                      <div class="card">
-                        <p>
-                          使用エディタ。拡張機能やフォーマットなどのsettings.jsonを用いた設定も経験。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--　デザイン -->
-            <div class="main__skill__section">
-              <h1>デザインツール</h1>
-              <div class="main__skill__langs row">
-                <!-- XD -->
-                <div
-                  class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
-                >
-                  <div class="main__skill__block__icons">
-                    <i class="main__skill__block__devicon devicon-xd-plain"></i>
-                  </div>
-                  <div>
-                    <h4 class="main__skill__block__name">Adobe XD</h4>
-                    <div class="main__skill__block__explain">
-                      <div class="card">
-                        <p>
-                          現在学習中。主にワイヤーフレームの作成、Webページのデザインに使用。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Illustrator -->
-                <div
-                  class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
-                >
-                  <div class="main__skill__block__icons">
-                    <i
-                      class="main__skill__block__devicon devicon-illustrator-plain"
-                    ></i>
-                  </div>
-                  <div>
-                    <h4 class="main__skill__block__name">Illustrator</h4>
-                    <div class="main__skill__block__explain">
-                      <div class="card">
-                        <p>
-                          現在学習中。本サイトのキービジュアル（アニメーション）作成に使用。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Photoshop -->
-                <div
-                  class="main__skill__lang d-flex align-items-center col-xl-4 col-lg-6"
-                >
-                  <div class="main__skill__block__icons">
-                    <i
-                      class="main__skill__block__devicon devicon-photoshop-plain"
-                    ></i>
-                  </div>
-                  <div>
-                    <h4 class="main__skill__block__name">Photoshop</h4>
-                    <div class="main__skill__block__explain">
-                      <div class="card">
-                        <p>
-                          現在学習中。主に画像加工に使用。ゆくゆくはグラフィック作成も想定。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text-center">
-              <a href="#works">
-                <div class="main__scroll">
-                  <h4>Scroll</h4>
-                  <span class="material-symbols-outlined">
-                    keyboard_double_arrow_down
-                  </span>
-                </div>
-              </a>
-            </div>
+            </a>
           </div>
         </section>
         <!--”
@@ -534,30 +542,19 @@
             </div>
             <div class="row main__comingsoon-bg text-center">
               <div class="col card main__comingsoon-content">
-                <p class="bound">
-                  <span>C</span>
-                  <span>o</span>
-                  <span>m</span>
-                  <span>i</span>
-                  <span>n</span>
-                  <span>g </span>
-                  <span> S</span>
-                  <span>o</span>
-                  <span>o</span>
-                  <span>n</span>
-                </p>
+                <h2 class="signature">Coming Soon ...</h2>
               </div>
             </div>
-            <div class="text-center">
-              <a href="#info">
-                <div class="main__scroll">
-                  <h4>Scroll</h4>
-                  <span class="material-symbols-outlined">
-                    keyboard_double_arrow_down
-                  </span>
-                </div>
-              </a>
-            </div>
+          </div>
+          <div class="text-center main__scroll__section">
+            <a href="#info">
+              <div class="main__scroll__block">
+                <h4>Scroll</h4>
+                <span class="material-symbols-outlined">
+                  keyboard_double_arrow_down
+                </span>
+              </div>
+            </a>
           </div>
         </section>
         <section class="info">
@@ -567,18 +564,7 @@
           <p></p>
           <div class="row main__comingsoon-bg text-center">
             <div class="col card main__comingsoon-content">
-              <p class="bound">
-                <span>C</span>
-                <span>o</span>
-                <span>m</span>
-                <span>i</span>
-                <span>n</span>
-                <span>g </span>
-                <span> S</span>
-                <span>o</span>
-                <span>o</span>
-                <span>n</span>
-              </p>
+              <h2 class="signature">Coming Soon ...</h2>
             </div>
           </div>
         </section>
