@@ -22,16 +22,28 @@
   }
 
   &__skill {
+    &__section {
+      margin-top: 2rem;
+    }
+
     &__block {
+      margin: 2rem;
+      align-items: center;
+
       &__heading {
         align-items: center;
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: center;
       }
 
       &__icons {
-        font-size: 6rem;
+        font-size: 4rem;
         color: #006d77;
+        margin: 1rem;
+      }
+
+      &__explain {
+        margin: 0;
+        padding: 0.5rem;
       }
     }
   }

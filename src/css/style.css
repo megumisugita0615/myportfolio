@@ -285,14 +285,25 @@
   background-color: #e7eeee;
   border-radius: 1rem;
 }
+.main__skill__section {
+  margin-top: 2rem;
+}
+.main__skill__block {
+  margin: 2rem;
+  align-items: center;
+}
 .main__skill__block__heading {
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 }
 .main__skill__block__icons {
-  font-size: 6rem;
+  font-size: 4rem;
   color: #006d77;
+  margin: 1rem;
+}
+.main__skill__block__explain {
+  margin: 0;
+  padding: 0.5rem;
 }
 
 html,
@@ -317,14 +328,8 @@ li {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-weight: 200;
-  padding-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 h1 {
@@ -333,6 +338,11 @@ h1 {
 
 h2 {
   color: #006d77;
+}
+
+h3,
+h4 {
+  color: #07373b;
 }
 
 section {
