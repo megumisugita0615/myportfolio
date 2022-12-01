@@ -1,9 +1,13 @@
-@use "_custom";
 @use "_mixin" as m;
 @use "_header";
 @use "_keyvisual";
 @use "_main";
+@use "_about";
+@use "_skill";
+@use "_works";
+@use "_info";
 @use "_footer";
+@use "_custom";
 
 html,
 body {
