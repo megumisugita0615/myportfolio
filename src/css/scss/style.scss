@@ -3,7 +3,7 @@
 @use "_header";
 @use "_keyvisual";
 @use "_main";
-@use "_works";
+@use "_footer";
 
 html,
 body {
@@ -27,22 +27,22 @@ li {
   font-weight: 200;
 }
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-weight: 200;
-  padding-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 h1 {
   color: #87bcc1;
 }
 
+h2,
+h3,
+h4 {
+  color: #006d77;
+}
+
 section {
   margin-top: 2rem;
   padding-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 10rem;
 }
