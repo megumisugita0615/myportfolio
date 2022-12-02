@@ -1,73 +1,43 @@
 @use "_mixin" as m;
 
 .main {
-  &__scroll {
-    &__section {
-      margin-top: 1rem;
-      margin-bottom: 4rem;
+    &__scroll {
+        &__section {
+            margin-bottom: 4rem;
+            margin-top: 1rem;
+        }
+        &__block {
+            animation: move-y 0.5s infinite alternate ease-in-out;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+        }
     }
-    &__block {
-      animation: move-y 0.5s infinite alternate ease-in-out;
-      margin-top: auto;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
 
-  &__section-title {
-    font-size: 4.8rem;
-    text-align: center;
-    color: #87bcc1;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-  &__about {
-    &__profile-photo {
-      height: 20rem;
-      margin-bottom: 1rem;
+    &__section-title {
+        color: #87bcc1;
+        font-size: 4.8rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        text-align: center;
     }
-  }
-  &__comingsoon {
-    &-bg {
-      margin-top: 1rem;
-      margin-left: auto;
-      margin-right: auto;
+    &__about {
+        &__profile-photo {
+            height: 20rem;
+            margin-bottom: 1rem;
+        }
     }
-    &-content {
-      height: 20rem;
-      padding: 1rem;
-      padding-top: 10rem;
-      background-color: #e7eeee;
-      border-radius: 1rem;
+    &__comingsoon {
+        &-bg {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1rem;
+        }
+        &-content {
+            background-color: #e7eeee;
+            border-radius: 1rem;
+            height: 20rem;
+            padding-top: 8rem;
+        }
     }
-  }
-
-  &__skill {
-    &__area {
-      padding-top: 2rem;
-      margin-bottom: 2rem;
-    }
-    &__lang {
-      margin-top: 1rem;
-    }
-    &__block {
-      margin: 2rem;
-      align-items: center;
-
-      &__name {
-        margin-left: 1rem;
-      }
-
-      &__devicon {
-        font-size: 5rem;
-        color: #006d77;
-        margin: 1rem;
-      }
-
-      &__explain {
-        margin: 0;
-        padding: 0.5rem;
-      }
-    }
-  }
 }

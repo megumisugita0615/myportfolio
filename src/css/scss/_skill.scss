@@ -1,0 +1,28 @@
+.skill {
+    &__area {
+        margin-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    &__lang {
+        margin-top: 1rem;
+    }
+    &__block {
+        align-items: center;
+        margin: 2rem;
+
+        &__name {
+            margin-left: 1rem;
+        }
+
+        &__devicon {
+            color: #006d77;
+            font-size: 5rem;
+            margin: 1rem;
+        }
+
+        &__explain {
+            margin: 0;
+            padding: 0.5rem;
+        }
+    }
+}
