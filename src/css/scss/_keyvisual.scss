@@ -1,41 +1,41 @@
 @use "_mixin" as m;
 
 .keyvisual {
-  padding-top: 30vh;
-  padding-bottom: 6rem;
-  margin-bottom: 1rem;
-  color: #006d77;
-  background-color: #e7eeee;
+    background-color: #e7eeee;
+    color: #006d77;
+    margin-bottom: 1rem;
+    padding-bottom: 6rem;
+    padding-top: 30vh;
 
-  &__animation {
-    &__svg {
-      display: block;
-      width: 40%;
-      max-height: 40%;
-      margin-left: auto;
-      margin-right: auto;
+    &__animation {
+        &__svg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 40%;
+            width: 40%;
+        }
+        &__image {
+            width: 100%;
+        }
     }
-    &__image {
-      width: 100%;
-    }
-  }
 
-  /*スクロールの矢印*/
-  .material-symbols-outlined {
-    font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
-  }
-  @keyframes move-y {
-    from {
-      transform: translateY(0);
+    /*スクロールの矢印*/
+    .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
     }
-    to {
-      transform: translateY(10px);
+    @keyframes move-y {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(10px);
+        }
     }
-  }
 }
 
 #keyvisual__scroll {
-  margin-top: 5rem;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
 }

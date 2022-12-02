@@ -11,42 +11,42 @@
 
 html,
 body {
-  color: #07373b;
-  background-color: #ffffff;
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 300;
-  scroll-padding-top: 5rem;
+    background-color: #ffffff;
+    color: #07373b;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 300;
+    scroll-padding-top: 5rem;
 }
 
 a {
-  color: #006d77;
+    color: #006d77;
 
-  &:hover {
-    color: #87bcc1;
-  }
+    &:hover {
+        color: #87bcc1;
+    }
 }
 
 li {
-  list-style: none;
-  font-weight: 200;
+    font-weight: 200;
+    list-style: none;
 }
 h1,
 h2 {
-  font-weight: 200;
+    font-weight: 200;
 }
 
 h1 {
-  color: #87bcc1;
+    color: #87bcc1;
 }
 
 h2,
 h3,
 h4 {
-  color: #006d77;
+    color: #006d77;
 }
 
 section {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  margin-bottom: 10rem;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
